@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
   s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/XMPPFramework/Vendor/libidn"' }
   s.dependency 'CocoaLumberjack'
   s.dependency 'CocoaAsyncSocket'
-  s.dependency 'KissXML', :podspec => 'https://raw.github.com/mborsten/KissXML-podspec/master/5.5/KissXML.podspec'
+  s.dependency 'KissXML'
 end
