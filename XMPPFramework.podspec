@@ -8,12 +8,12 @@ Pod::Spec.new do |s|
   s.source        = { :git => 'git://github.com/robbiehanson/XMPPFramework.git', :tag => '3.5'}
   s.platform = :ios
   s.source_files  = 'Categories/*.{h,m}', 'Core/*.{h,m}', 'Extensions/**/*.{h,m}', 'Utilities/*.{h,m}', 'Vendor/libidn/*.{h,m,a}'
-  s.clean_paths   = 'Xcode', 'Vendor/libidn/libidn-1.15.tar.gz', 'Vendor/KissXML', 'Vendor/CocoaLumberjack', 'Vendor/CocoaAsyncSocket'
+  #s.clean_paths   = 'Xcode', 'Vendor/libidn/libidn-1.15.tar.gz', 'Vendor/KissXML', 'Vendor/CocoaLumberjack', 'Vendor/CocoaAsyncSocket'
   s.frameworks  = 'CFNetwork', 'SystemConfiguration', 'CoreData', 'CoreLocation'
   s.library      = 'xml2', 'libidn', 'resolv'
   s.requires_arc = true
   s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/XMPPFramework/Vendor/libidn"' }
-  s.dependency 'CocoaLumberjack'
-  s.dependency 'CocoaAsyncSocket'
-  s.dependency 'KissXML'
+  #s.dependency 'CocoaLumberjack'
+  #s.dependency 'CocoaAsyncSocket'
+  #s.dependency 'KissXML'
 end
