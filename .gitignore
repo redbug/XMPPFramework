@@ -3,3 +3,4 @@
 *.mode2v3
 xcuserdata
 .DS_Store
+Vendor/libidn/libidn-1.25/
