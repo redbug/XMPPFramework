@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author        = {'Robbie Hanson' => 'http://deusty.blogspot.com/'}
   s.source        = { :git => 'git://github.com/robbiehanson/XMPPFramework.git', :tag => '3.5'}
   s.platform = :ios
-  s.source_files  = 'Categories/*.{h,m}', 'Core/*.{h,m}', 'Extensions/**/*.{h,m}', 'Authentication/**/*.{h,m}', 'Utilities/*.{h,m}', 'Vendor/libidn/*.{h,m,a}', 'Vendor/KissXML/**/*.{h,m}'
+  s.source_files  = 'Categories/*.{h,m}', 'Core/*.{h,m}', 'Extensions/**/*.{h,m}', 'Authentication/**/*.{h,m}', 'Utilities/*.{h,m}', 'Vendor/libidn/*.{h,m,a}', 'Vendor/KissXML/**/*.{h,m}', 'XMPPFramework.h'
   s.frameworks  = 'CFNetwork', 'SystemConfiguration', 'CoreData', 'CoreLocation'
   s.library      = 'xml2', 'libidn', 'resolv'
   s.requires_arc = true
