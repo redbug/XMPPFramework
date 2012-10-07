@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
                     'Vendor/KissXML/**/*.{h,m}', 
                     'XMPPFramework.h'
   s.frameworks  = 'CFNetwork', 'SystemConfiguration', 'CoreData', 'CoreLocation'
-  s.library      = 'xml2', 'resolv', 'libidn'
+  #s.library      = 'xml2', 'resolv', 'libidn'
   s.requires_arc = true
   s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/XMPPFramework/Vendor/libidn"' }
   s.dependency 'CocoaLumberjack'
